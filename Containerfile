@@ -26,7 +26,7 @@ FROM ghcr.io/ublue-os/base-main:42
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-RUN systemd --global enable yafti.service
+RUN systemctl --global enable yafti.service
 
 RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 
