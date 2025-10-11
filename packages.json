@@ -1,6 +1,7 @@
 {
 	"base": [
 		"gvfs-nfs",
+		"gnome-initial-setup",
 		"ibus-unikey",
 		"ibus-mozc"
 	],
