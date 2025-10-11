@@ -1,6 +1,5 @@
 {
 	"base": [
-		"neovim",
 		"gvfs-nfs",
 		"ibus-unikey",
 		"ibus-mozc"
@@ -9,8 +8,9 @@
 		"adw-gtk3-theme",
 		"gnome-shell",
 		"gdm",
-		"ptyxis",
-		"nautilus"
+		"nautilus",
+		"neovim",
+		"ptyxis"
 	],
 	"excludes": [
 		"firefox",
@@ -19,6 +19,7 @@
 		"htop",
 		"nvtop",
 		"gnome-tour",
-		"malcontent-control"
+		"malcontent-control",
+		"plymouth"
 	]
 }
