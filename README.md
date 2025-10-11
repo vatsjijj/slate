@@ -1,6 +1,9 @@
 # Slate
 Slate is a very minimal build of Universal Blue meant to be a stepping stone to something like Arch or a branched Fedora release. It is also meant for enterprises potentially.
 
+# Notice
+Slate is **alpha quality** software. Do not install this on production machines unless you're able to fix things by yourself or contribute to the project. Breaking changes will most definitely occur.
+
 # Attributions
 ## Wallpapers
 - [Laura Ockel](https://unsplash.com/@viazavier)
