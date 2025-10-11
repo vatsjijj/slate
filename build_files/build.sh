@@ -23,8 +23,6 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-systemctl enable gnome-initial-setup-first-login.service
-systemctl enable gdm-initial-setup.service
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
