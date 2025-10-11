@@ -5,5 +5,10 @@
 		"gvfs-nfs",
 		"ibus-unikey",
 		"ibus-mozc"
+	],
+	"excludes": [
+		"firefox",
+		"toolbox",
+		"vim"
 	]
 }

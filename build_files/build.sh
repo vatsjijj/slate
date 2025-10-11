@@ -9,7 +9,11 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# install from packages
 dnf5 -y install $(jq -r '.base_ws | join(" ")' /ctx/packages.json)
+
+# remove from packages
+dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 
 # Use a COPR Example:
 #
