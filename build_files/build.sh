@@ -27,7 +27,3 @@ systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
 systemctl enable bluetooth.service
-
-# set defaults
-gsettings set org.gnome.desktop.default-applications.terminal exec 'ptyxis'
-gsettings set org.gnome.nautilus.preferences default-sort-order 'type'
