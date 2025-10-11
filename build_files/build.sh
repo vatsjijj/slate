@@ -9,18 +9,6 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# uninstall all flatpaks (if they exist)
-flatpak uninstall --all --delete-data --assumeyes
-
-# check flatpak mirrors
-if flatpak remotes | grep -q '^fedora\b'; then
-	flatpak remote-delete --assumeyes fedora
-fi
-
-if ! flatpak remotes | grep -q '^flathub\b'; then
-	flatpak remote-add --assumeyes flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-fi
-
 # install from packages
 dnf5 -y install $(jq -r '.base | join(" ")' /ctx/packages.json)
 dnf5 -y install $(jq -r '.desktop | join(" ")' /ctx/packages.json)
@@ -40,3 +28,4 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
+systemctl enable bluetooth.service
