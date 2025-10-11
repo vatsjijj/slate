@@ -16,6 +16,9 @@ dnf5 -y install $(jq -r '.desktop | join(" ")' /ctx/packages.json)
 # remove from packages
 dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 
+# install yafti
+pip install --prefix=/usr yafti
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -23,6 +26,7 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+systemctl --global enable yafti.service
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service

@@ -12,7 +12,7 @@ screens:
   can-we-modify-your-flatpaks:
     source: yafti.screen.consent
     values:
-      title: Welcome, Traveler!
+      title: Welcome!
       condition:
         run: flatpak remotes --columns=name | grep fedora
       description: |
@@ -66,7 +66,7 @@ screens:
             - Contacts: org.gnome.Contacts
             - Disk Usage Analyzer: org.gnome.baobab
             - Document Scanner: org.gnome.SimpleScan
-            - Document Viewer: org.gnome.Evince
+            - Document Viewer: org.gnome.Papers
             - Extension Manager: com.mattjakeman.ExtensionManager
             - Font Viewer: org.gnome.font-viewer
             - Image Viewer: org.gnome.Loupe
@@ -75,7 +75,7 @@ screens:
             - Photos (Organizer): org.gnome.Photos
             - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
             - Text Editor: org.gnome.TextEditor
-            - Videos (Player): org.gnome.Totem
+            - Videos (Player): org.gnome.Showtime
             - Weather: org.gnome.Weather
         System Apps:
           description: System applications for all desktop environments.
@@ -96,7 +96,7 @@ screens:
             - Microsoft Edge: com.microsoft.Edge
             - Opera: com.opera.Opera
         Gaming:
-          description: Gaming utilities and applications.
+          description: Gaming applications and utilities.
           default: false
           packages:
             - Bottles: com.usebottles.bottles
@@ -108,7 +108,7 @@ screens:
             - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
             - Proton Updater for Steam: net.davidotek.pupgui2
         Office:
-          description: Office applications for productivity.
+          description: Boost your productivity.
           default: false
           packages:
             - LibreOffice: org.libreoffice.LibreOffice
@@ -134,10 +134,10 @@ screens:
       # icon: "/path/to/icon"
       links:
         # - "Install More Applications":
-        #     run: /usr/bin/gnome-software
+          # run: /usr/bin/gnome-software
         - "UBlue Website":
             run: /usr/bin/xdg-open https://ublue.it
         - "Join the UBlue Discord Community":
             run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
       description: |
-        Thank you for using Slate.
+        Thanks for trying Slate, we hope you enjoy it!

@@ -3,7 +3,9 @@
 		"gvfs-nfs",
 		"gnome-initial-setup",
 		"ibus-unikey",
-		"ibus-mozc"
+		"ibus-mozc",
+		"libadwaita",
+		"python3-pip"
 	],
 	"desktop": [
 		"adw-gtk3-theme",

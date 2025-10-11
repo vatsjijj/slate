@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the first-boot OOBE
+After=graphical-session-pre.target
+PartOf=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/yafti --first-boot --config /etc/yafti/config.yml
+
+[Install]
+WantedBy=graphical-session.target
