@@ -7,6 +7,7 @@ COPY backgrounds /usr/share/backgrounds/slate/
 COPY gsettings /usr/share/glib-2.0/schemas/
 COPY gnome-background-properties/slate-wallpapers.xml /usr/share/gnome-background-properties/
 COPY etc/os-release /etc/os-release
+COPY user/yafti.yml /usr/share/ublue-os/firstboot/yafti.yml
 
 # Base Image
 FROM ghcr.io/ublue-os/base-main:42
@@ -23,6 +24,12 @@ FROM ghcr.io/ublue-os/base-main:42
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
+
+# Add Yafti for the first-boot experience
+RUN --mount=type=bind,from=ghcr.io/blue-build/modules:latest,src=/modules,dst=/tmp/modules,rw \
+    --mount=type=bind,from=ghcr.io/blue-build/cli/build-scripts:latest,src=/scripts/,dst=/tmp/scripts/ \
+    /tmp/scripts/run yafti
+
 
 RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 
