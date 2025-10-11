@@ -3,7 +3,7 @@
 		"neovim",
 		"adw-gtk3-theme",
 		"gvfs-nfs",
-		"ibus-ubikey",
+		"ibus-unikey",
 		"ibus-mozc"
 	]
 }
