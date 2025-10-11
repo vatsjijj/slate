@@ -1,7 +1,11 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
+
 COPY build_files /
 COPY packages.json /
+COPY backgrounds /usr/share/backgrounds/slate/
+COPY gsettings /usr/share/glib-2.0/schemas/
+COPY gnome-background-properties/slate-wallpapers.xml /usr/share/gnome-background-properties/
 
 # Base Image
 FROM ghcr.io/ublue-os/base-main:42
@@ -18,6 +22,8 @@ FROM ghcr.io/ublue-os/base-main:42
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
+
+RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \

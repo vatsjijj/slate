@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+	<wallpaper>
+		<name>Laura Ockel - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg1.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+	<wallpaper>
+		<name>Mostafa Meraji - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg2.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+	<wallpaper>
+		<name>Balikó András - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg3.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+	<wallpaper>
+		<name>Paws and Prints - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg4.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+	<wallpaper>
+		<name>Ricardo Gomez Angel - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg5.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+	<wallpaper>
+		<name>Shahabudin Ibragimov - 1</name>
+		<filename>/usr/share/backgrounds/slate/bg6.jpg</filename>
+		<options>zoom</options>
+		<pcolor>#000000</pcolor>
+		<scolor>#000000</scolor>
+		<shade_type>solid</shade_type>
+	</wallpaper>
+</wallpapers>
