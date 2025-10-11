@@ -26,12 +26,6 @@ FROM ghcr.io/ublue-os/base-main:42
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-# Add Yafti for the first-boot experience
-RUN --mount=type=bind,from=ghcr.io/blue-build/modules:latest,src=/modules,dst=/tmp/modules,rw \
-    --mount=type=bind,from=ghcr.io/blue-build/cli/build-scripts:latest,src=/scripts/,dst=/tmp/scripts/ \
-    /tmp/scripts/run yafti
-
-
 RUN glib-compile-schemas /usr/share/glib-2.0/schemas
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
