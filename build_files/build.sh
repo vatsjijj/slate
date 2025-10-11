@@ -9,6 +9,9 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# flathub
+flatpak remote-add --if-not-exists --assumeyes flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 # install from packages
 dnf5 -y install $(jq -r '.base | join(" ")' /ctx/packages.json)
 dnf5 -y install $(jq -r '.desktop | join(" ")' /ctx/packages.json)

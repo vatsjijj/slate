@@ -17,6 +17,7 @@
 		"toolbox",
 		"vim",
 		"htop",
-		"nvtop"
+		"nvtop",
+		"gnome-tour"
 	]
 }
