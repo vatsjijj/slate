@@ -7,7 +7,7 @@ COPY backgrounds /usr/share/backgrounds/slate/
 COPY gsettings /usr/share/glib-2.0/schemas/
 COPY gnome-background-properties/slate-wallpapers.xml /usr/share/gnome-background-properties/
 COPY etc/os-release /etc/os-release
-COPY user/yafti.yml /usr/share/ublue-os/firstboot/yafti.yml
+COPY usr/yafti.yml /usr/share/ublue-os/firstboot/yafti.yml
 
 # Base Image
 FROM ghcr.io/ublue-os/base-main:42
