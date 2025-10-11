@@ -11,11 +11,11 @@ set -ouex pipefail
 
 # check flatpak mirrors
 if flatpak remotes | grep -q '^fedora\b'; then
-	flatpak remote-delete -y fedora
+	flatpak remote-delete --assumeyes fedora
 fi
 
 if ! flatpak remotes | grep -q '^flathub\b'; then
-	flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	flatpak remote-add --assumeyes flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 fi
 
 # install from packages
