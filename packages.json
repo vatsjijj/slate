@@ -8,11 +8,14 @@
 	"desktop": [
 		"adw-gtk3-theme",
 		"gnome-shell",
-		"gdm"
+		"gdm",
+		"ptyxis"
 	],
 	"excludes": [
 		"firefox",
 		"toolbox",
-		"vim"
+		"vim",
+		"htop",
+		"nvtop"
 	]
 }
