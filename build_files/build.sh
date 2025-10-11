@@ -9,6 +9,9 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# uninstall all flatpaks (if they exist)
+flatpak uninstall --all --delete-data --assumeyes
+
 # check flatpak mirrors
 if flatpak remotes | grep -q '^fedora\b'; then
 	flatpak remote-delete --assumeyes fedora
@@ -19,7 +22,8 @@ if ! flatpak remotes | grep -q '^flathub\b'; then
 fi
 
 # install from packages
-dnf5 -y install $(jq -r '.base_ws | join(" ")' /ctx/packages.json)
+dnf5 -y install $(jq -r '.base | join(" ")' /ctx/packages.json)
+dnf5 -y install $(jq -r '.desktop | join(" ")' /ctx/packages.json)
 
 # remove from packages
 dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
@@ -34,3 +38,5 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable gdm.service
+systemctl enable NetworkManager.service

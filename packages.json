@@ -1,10 +1,14 @@
 {
-	"base_ws": [
+	"base": [
 		"neovim",
-		"adw-gtk3-theme",
 		"gvfs-nfs",
 		"ibus-unikey",
 		"ibus-mozc"
+	],
+	"desktop": [
+		"adw-gtk3-theme",
+		"gnome-shell",
+		"gdm"
 	],
 	"excludes": [
 		"firefox",
