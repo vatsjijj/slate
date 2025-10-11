@@ -9,7 +9,8 @@
 		"adw-gtk3-theme",
 		"gnome-shell",
 		"gdm",
-		"ptyxis"
+		"ptyxis",
+		"nautilus"
 	],
 	"excludes": [
 		"firefox",

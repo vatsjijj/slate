@@ -23,9 +23,11 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
-
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
 systemctl enable bluetooth.service
+
+# set defaults
+gsettings set org.gnome.desktop.default-applications.terminal exec 'ptyxis'
+gsettings set org.gnome.nautilus.preferences default-sort-order 'type'
