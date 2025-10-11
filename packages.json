@@ -1,0 +1,9 @@
+{
+	"base_ws": [
+		"neovim",
+		"adw-gtk3-theme",
+		"gvfs-nfs",
+		"ibus-ubikey",
+		"ibus-mozc"
+	]
+}
