@@ -9,6 +9,7 @@ COPY gnome-background-properties/slate-wallpapers.xml /usr/share/gnome-backgroun
 COPY etc/os-release /etc/os-release
 COPY yafti/config.yml /etc/yafti/config.yml
 COPY systemd/yafti.service /usr/lib/systemd/user/
+COPY etc/gdm-custom.conf /etc/gdm/custom.conf
 
 # Base Image
 FROM ghcr.io/ublue-os/base-main:42
