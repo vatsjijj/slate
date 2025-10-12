@@ -12,7 +12,7 @@ COPY systemd/yafti.service /usr/lib/systemd/user/
 COPY etc/gdm-custom.conf /etc/gdm/custom.conf
 
 # Base Image
-FROM ghcr.io/ublue-os/base-main:42
+FROM ghcr.io/ublue-os/base-nvidia:42
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
