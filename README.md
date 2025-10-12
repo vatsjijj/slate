@@ -6,6 +6,8 @@ Slate is currently based on version 42 of the [Universal Blue base image](https:
 # Notice
 Slate is **alpha quality** software. Do not install this on production machines unless you're able to fix things by yourself or contribute to the project. Breaking changes will most definitely occur.
 
+Slate is also currently an *NVIDIA* image, as I am new to this and am not sure how to publish a separate NVIDIA package.
+
 # Attributions
 ## Wallpapers
 - [Laura Ockel](https://unsplash.com/@viazavier)

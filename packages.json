@@ -4,6 +4,7 @@
 		"gvfs-nfs",
 		"ibus-unikey",
 		"ibus-mozc",
+                "kmod-nvidia-open",
 		"libadwaita",
 		"python3-pip"
 	],

@@ -5,7 +5,7 @@ PartOf=graphical-session.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/yafti --first-boot --config /etc/yafti/config.yml
+ExecStart=/usr/bin/yafti --config /etc/yafti/config.yml
 
 [Install]
 WantedBy=graphical-session.target
