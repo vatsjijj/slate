@@ -30,6 +30,9 @@ mkdir -vp /usr/lib/systemd/user
 cp -vr /ctx/usr /
 cp -vr /ctx/etc /
 
+# create gdm file for setup
+touch /var/lib/gdm/run-initial-setup
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
