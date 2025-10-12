@@ -11,9 +11,6 @@ COPY yafti/config.yml /etc/yafti/config.yml
 COPY systemd/yafti.service /usr/lib/systemd/user/
 COPY etc/gdm-custom.conf /etc/gdm/custom.conf
 
-# AKMODS
-COPY --from=ghcr.io/ublue-os/akmods:latest / /
-
 # Base Image
 FROM ghcr.io/ublue-os/base-main:42
 
