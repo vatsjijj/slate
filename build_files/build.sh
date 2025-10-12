@@ -27,8 +27,8 @@ mkdir -vp /etc/yafti
 mkdir -vp /usr/lib/systemd/user
 
 # copy files from ctx
-cp -vr /ctx/usr /usr
-cp -vr /ctx/etc /etc
+cp -vr /ctx/usr /
+cp -vr /ctx/etc /
 
 # Use a COPR Example:
 #
