@@ -19,6 +19,17 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 # install yafti
 pip install --prefix=/usr yafti
 
+# make directories
+mkdir -vp /usr/share/backgrounds/slate
+mkdir -vp "/usr/share/glib-2.0/schemas"
+mkdir -vp /usr/share/gnome-background-properties
+mkdir -vp /etc/yafti
+mkdir -vp /usr/lib/systemd/user
+
+# copy files from ctx
+cp -v /ctx/usr /usr
+cp -v /ctx/etc /etc
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -26,6 +37,7 @@ pip install --prefix=/usr yafti
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+systemctl --global enable yafti.service
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
