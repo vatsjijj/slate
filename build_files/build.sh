@@ -30,6 +30,9 @@ mkdir -vp /usr/lib/systemd/user
 cp -vr /ctx/usr /
 cp -vr /ctx/etc /
 
+# compile schemas
+glib-compile-schemas /usr/share/glib-2.0/schemas
+
 # create gdm file for setup
 touch /var/lib/gdm/run-initial-setup
 
