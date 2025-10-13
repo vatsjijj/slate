@@ -4,7 +4,6 @@
 		"gvfs-nfs",
 		"ibus-unikey",
 		"ibus-mozc",
-		"libadwaita",
 		"python3-pip"
 	],
 	"desktop": [
