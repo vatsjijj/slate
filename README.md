@@ -11,7 +11,7 @@ Slate is also currently an **NVIDIA** image, as I am new to this and am not sure
 # Installing
 You can either rebase your current system image on Slate, or you can download the occasional ISO file from Actions.
 
-To download the ISO from Actions, click on Actions and click on the latest "Build disk images" action. There is a build artefact named `artefact.zip`, the ISO is in there.
+To download the ISO from Actions, click on Actions and click on the latest "Build disk images" action. There is a build artifact named `artifact.zip`, the ISO is in there.
 
 # Attributions
 ## Wallpapers
