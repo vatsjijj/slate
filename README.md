@@ -8,6 +8,8 @@ Slate is **alpha quality** software. Do not install this on production machines 
 
 Slate is also currently an **NVIDIA** image, as I am new to this and am not sure how to publish a separate NVIDIA package.
 
+New Slate ISOs are built every day at 11 AM UTC.
+
 # Installing
 You can either rebase your current system image on Slate, or you can download the occasional ISO file from Actions.
 
