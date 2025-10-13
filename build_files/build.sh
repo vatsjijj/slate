@@ -46,3 +46,6 @@ systemctl enable bluetooth.service
 
 # default locale
 localectl set-locale LANG="en_US.UTF-8"
+
+# default hostname
+hostnamectl set-hostname "slate"
