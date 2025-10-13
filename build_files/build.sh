@@ -39,7 +39,6 @@ touch /var/lib/gdm/run-initial-setup
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-systemctl --global enable yafti.service
 systemctl enable podman.socket
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
