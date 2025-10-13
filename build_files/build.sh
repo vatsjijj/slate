@@ -45,7 +45,7 @@ systemctl enable NetworkManager.service
 systemctl enable bluetooth.service
 
 # default locale
-localectl set-locale LANG="en_US.UTF-8"
+echo "LANG=en_US.UTF-8" | tee /etc/locale.conf
 
 # default hostname
 echo "slate" | tee /etc/hostname
