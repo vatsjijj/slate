@@ -1,5 +1,5 @@
 # Slate
-Slate is a very minimal build of Universal Blue meant to be a stepping stone to something like Arch or a branched Fedora release. It is also meant for enterprises potentially.
+Slate is a very minimal build of Universal Blue meant to be a stepping stone to something like Arch or a branched Fedora release.
 
 Slate is currently based on version 42 of the [Universal Blue base image](https://github.com/ublue-os/main).
 

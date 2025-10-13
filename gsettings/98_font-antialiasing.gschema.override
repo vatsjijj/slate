@@ -1,2 +1,2 @@
-[org.gnome.settings-daemon.plugins.xsettings]
-antialiasing='rgba'
+[org.gnome.desktop.interface]
+font-antialiasing='rgba'
