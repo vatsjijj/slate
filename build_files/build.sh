@@ -23,6 +23,9 @@ pip install --prefix=/usr yafti
 cp -vr /ctx/usr /
 cp -vr /ctx/etc /
 
+# modify scripts
+chmod +x /etc/yafti/yafti.sh
+
 # compile schemas
 glib-compile-schemas /usr/share/glib-2.0/schemas
 

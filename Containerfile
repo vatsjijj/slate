@@ -12,9 +12,6 @@ COPY etc/yafti.sh /etc/yafti/yafti.sh
 COPY etc/gdm-custom.conf /etc/gdm/custom.conf
 COPY etc/yafti-first-boot.desktop /etc/skel/.config/autostart/yafti-first-boot.desktop
 
-# runners
-RUN chmod +x /etc/yafti/yafti.sh
-
 # Base Image
 FROM ghcr.io/ublue-os/base-nvidia:42
 
