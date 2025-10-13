@@ -1,6 +1,5 @@
 ---
 name: Build disk images
-
 on:
   workflow_dispatch:
     inputs:
@@ -22,6 +21,8 @@ on:
       - './disk_config/disk.toml'
       - './disk_config/iso.toml'
       - './.github/workflows/build-disk.yml'
+  schedule:
+    - cron: '00 11 * * *' # 11am UTC every day
 
 env:
   IMAGE_NAME: ${{ github.event.repository.name }} # output of build.yml, keep in sync
