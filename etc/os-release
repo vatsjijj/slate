@@ -1,6 +1,6 @@
 NAME="Slate"
-VERSION="0.1.6"
-PRETTY_NAME="Slate 0.1.6"
+VERSION="0.1.7"
+PRETTY_NAME="Slate 0.1.7"
 ANSI_COLOR="38;5;15"
 HOME_URL="https://github.com/vatsjijj/slate"
 BUG_REPORT_URL="https://github.com/vatsjijj/slate"
