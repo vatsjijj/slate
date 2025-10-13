@@ -22,7 +22,7 @@ To download the ISO from Actions, click on Actions and click on the latest "Buil
 - [Ricardo Gomez Angel](https://unsplash.com/@rgaleriacom)
 - [Shahabudin Ibragimov](https://unsplash.com/@sb_dn)
 
-Please hire these wonderful individuals for your projects.
+Please hire these wonderful people for your projects.
 
 ## Base Images
 - [Universal Blue](https://universal-blue.org/)
