@@ -7,9 +7,13 @@ COPY backgrounds /usr/share/backgrounds/slate/
 COPY gsettings /usr/share/glib-2.0/schemas/
 COPY gnome-background-properties/slate-wallpapers.xml /usr/share/gnome-background-properties/
 COPY etc/os-release /etc/os-release
-COPY yafti/config.yml /etc/yafti/config.yml
-COPY systemd/yafti.service /usr/lib/systemd/user/
+COPY etc/yafti.yml /etc/yafti/yafti.yml
+COPY etc/yafti.sh /etc/yafti/yafti.sh
 COPY etc/gdm-custom.conf /etc/gdm/custom.conf
+COPY etc/yafti-first-boot.desktop /etc/skel/.config/autostart/yafti-first-boot.desktop
+
+# runners
+RUN chmod +x /etc/yafti/yafti.sh
 
 # Base Image
 FROM ghcr.io/ublue-os/base-nvidia:42

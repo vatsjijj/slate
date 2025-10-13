@@ -19,13 +19,6 @@ dnf5 -y remove $(jq -r '.excludes | join(" ")' /ctx/packages.json)
 # install yafti
 pip install --prefix=/usr yafti
 
-# make directories
-mkdir -vp /usr/share/backgrounds/slate
-mkdir -vp "/usr/share/glib-2.0/schemas"
-mkdir -vp /usr/share/gnome-background-properties
-mkdir -vp /etc/yafti
-mkdir -vp /usr/lib/systemd/user
-
 # copy files from ctx
 cp -vr /ctx/usr /
 cp -vr /ctx/etc /

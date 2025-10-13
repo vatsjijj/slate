@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=First Boot Setup
+Exec=/etc/yafti/yafti.sh
+Terminal=false
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
