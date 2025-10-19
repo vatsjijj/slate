@@ -21,8 +21,6 @@ on:
       - './disk_config/disk.toml'
       - './disk_config/iso.toml'
       - './.github/workflows/build-disk.yml'
-  schedule:
-    - cron: '00 00 * * *' # 12am UTC every night
 
 env:
   IMAGE_NAME: ${{ github.event.repository.name }} # output of build.yml, keep in sync
