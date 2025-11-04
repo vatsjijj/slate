@@ -30,6 +30,7 @@ chmod +x /etc/yafti/yafti.sh
 glib-compile-schemas /usr/share/glib-2.0/schemas
 
 # create gdm file for setup
+mkdir -p /var/lib/gdm
 touch /var/lib/gdm/run-initial-setup
 
 # Use a COPR Example:
