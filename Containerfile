@@ -14,7 +14,7 @@ COPY etc/yafti-first-boot.desktop /etc/skel/.config/autostart/yafti-first-boot.d
 COPY etc/system.conf /etc/systemd/system.conf
 
 # Base Image
-FROM ghcr.io/ublue-os/base-nvidia:42
+FROM ghcr.io/ublue-os/base-nvidia:43
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
